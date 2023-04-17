@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<!--
+NOMBRE: FRANCISCO JAVIER HERNANDEZ MONDRAGON
+MATERIA: PROGRAMACION WEB 1
+FECHA: 08/03/2023
+DESCRIPCION: ETIQUETAS PARA FORMULARIOS
+-->
+<html lang ="es">
+    <head>
+        <title>Unidad 02 - Ejercicio 02</title>
+        <meta charset="utf-8">
+        <meta name="author" content="FRANCISCO JAVIER HERNANDEZ">
+        <meta name="revised" content="Miercoles 8 de marzo de 2023">
+        <meta name="description" content="fomr, button, select, datalist, textarea, progress, text, password, hideen, radio, checkbox, file, color, date, time, datetime, month, week, number, range, reset">
+    </head>
+    <body>
+        <hgroup>
+            <h1>FORMULARIOS WEB</h1>
+            <form>
+                <p>Formulario<br>Web HTML 5</p>
+                <label>Etiqueta (Label)</label>
+                <br><label>Control (Botón)</label><button>OK</button>
+                <br><label>Control (Input: Texto)</label><input type="text">
+                <br><label>Control (Input: Contraseña)</label><input type="password">
+                <br><label>Control (Input: Oculto)</label><input type="hidden">
+                <br><label>Control (Input: Rdio)</label><input type="radio">
+                <br><label>Control (Input: Verificacion)</label><input type="checkbox">
+                <br><label>Control (Input: Boton)</label><input type="button" value="Otro boton">
+                <br><label>Control (Input: Color)</label><input type="color">
+                <br><label>Control (Input: Fecha)</label><input type="date">
+                <br><label>Control (Input: Hora)</label><input type="time">
+                <br><label>Control (Input: Fecha y Hora)</label><input type="datetime-local">
+                <br><label>Control (Input: Semana)</label><input type="week">
+                <br><label>Control (Input: Mensual)</label><input type="month">
+                <br><label>Control (Input: Numerico)</label><input type="number">
+                <br><label>Control (Input: Rango)</label><input type="range">
+                <br><label>Control (Input: Restablecer)</label><input type="reset">
+                <br><label>Control (Input: Enviar)</label><input type="submit">
+                <br><label>Control (Input: Lista)</label>
+                <br><label>Control (Input: Seleccionar)</label>
+                <select>
+                    <option>VERDADERO</option>
+                    <option>FALSO</option>
+                </select>
+                <br><label>Control (Input: Lista de Datos)</label><input list="valores">
+                <datalist id="valores">
+                    <option value="VERDADERO"></option>
+                    <option value="FALSO"></option>
+                </datalist>
+                
+                <br><label>Control (ComBox) </label><input list="ListaValores">
+                <datalist id="ListaValores">
+                    <option value="VERDADERO"></option>
+                    <option value="FALSO"></option>
+                </datalist>
+
+                <br><label>Control (Caja de texto)</label><br><textarea placeholder="Comentarios...."></textarea>
+
+                <br><label>Control (BARRA DE PROGRESO)</label><progress></progress>
+                <br><label>Control (BARRA DE PROGRESO 0%)</label><progress min="0" max="100" value="0"></progress>
+                <br><label>Control (BARRA DE PROGRESO 25%)</label><progress min="0" max="100" value="25"></progress>
+                <br><label>Control (BARRA DE PROGRESO 50%)</label><progress min="0" max="100" value="50"></progress>
+                <br><label>Control (BARRA DE PROGRESO 75%)</label><progress min="0" max="100" value="75"></progress>
+                <br><label>Control (BARRA DE PROGRESO 100%)</label><progress min="0" max="100" value="100"></progress>
+
+
+            </form>
+            
+        </hgroup>
+
+        <hgroup>
+            <h1>EJEMPLO DE USO</h1>
+            <form>
+                <h4>REACTIVOS</h4>
+                <p>Radio buttom sencillo</p>
+                <label">1.- Se puede decir que HTML es un lenguaje sencillo?</label>
+                <br><input type="radio" name="reactivo_1">VERDADERO
+                <br><input type="radio" name="reactivo_1">FALSO
+                
+                <p>Radio buttom sencillo</p>
+                <label">1.1- Se puede decir que HTML es un lenguaje sencillo?</label>
+                <select>
+                    <option>--- SELECCIONA ---</option>
+                    <option a>VERDADERO</option>
+                    <option b>FALSO</option>
+                </select>
+                <!--<br><input type="radio" name="reactivo_1">VERDADERO
+                <br><input type="radio" name="reactivo_1">FALSO-->
+
+                <p>Radio button multiple</p>
+                <label> 2.- Son las siglas de Hyper Text Markup Language</label>
+                <br><input type="radio" name="reactivo_2">JS
+                <br><input type="radio" name="reactivo_2">CSS
+                <br><input type="radio" name="reactivo_2">HTML
+                <br><input type="radio" name="reactivo_2">PHP
+                <br><input type="radio" name="reactivo_2">SQL
+
+                <br><br><label> 2.- Son las siglas de Hyper Text Markup Language</label>
+                <select>
+                    <option>--- ELIGE UNA ---</option>
+                    <option 1>JS</option>
+                    <option 2>CSS</option>
+                    <option 3>HTML</option>
+                    <option 4>PHP</option>
+                    <option 5>SQL</option>
+                </select>
+            </form>
+        </hgroup>
+
+        <hgroup>
+            <h2>EJEMPLO DE USO 2</h2>
+            <form>
+                <h4>Checkbox multiple</h4>
+                
+                <label> 2.- Son las siglas de Hyper Text Markup Language</label>
+                <br><input type="checkbox">JS
+                <br><input type="checkbox">CSS
+                <br><input type="checkbox">HTML
+                <br><input type="checkbox">PHP
+                <br><input type="checkbox">SQL
+            </form>
+        </hgroup>
+
+        <hgroup>
+            <h1>ARCHIVOS</h1>
+            <form>
+                <label>CONTROL (INPUT ARCHIVOS)</label><input type="file">
+            </form>
+        </hgroup>
+
+        <hgroup>
+
+            <h1>TERMINOS Y CONDICIONES</h1>
+            <LABEL>Esta de acuerdo en aceptar todos los terminos y condiciones anteriormente descritos?</LABEL>
+            <br><input type="radio" name="term_cond">ACEPTAR <input type="radio" name="term_cond" checked>CANCELAR <button>CONTINUAR</button>
+            <p>Campos de un formulario</p>
+            <label>Telefono: </label><input type="text" placeholder="(444) 668 4122">
+            <label>Codigo Postal: </label><input type="text" placeholder="78000" value="78100">
+            <br><br><label>Matricula: </label><input type="text" placeholder="123456" maxlength="6">
+            
+        </hgroup>
+        <hgroup>
+            <br><h1>TIPOS DE RANGO</h1>
+            <br><label>Opcion entre 1 y 3</label><input type="range" min="1" max="3">
+            <br><label>Opcion entre 0 y 10</label><input type="range" min="0" max="10" value="7">
+            <br><label>Valor entre -10 y 10</label><input type="range" min="-10" max="10">
+            <br><label>(Control Input: Restablecer)</label><input type="reset">
+            
+            <br><br>
+            <p>ESTADOS DE LA REPUBLICA</p>
+            <label>Elegir un estado</label><input list="Estados">
+    <datalist id="Estados">
+                
+    <option value='Abejones'>
+    <option value='Acatlán de Pérez Figueroa'>
+    <option value='Asunción Cacalotepec'>
+    <option value='Asunción Cuyotepeji'>
+    <option value='Asunción Ixtaltepec'>
+    <option value='Asunción Nochixtlán'>
+    <option value='Asunción Ocotlán'>
+    <option value='Asunción Tlacolulita'>
+    <option value='Ayotzintepec'>
+    <option value='El Barrio de la Soledad'>
+    <option value='Calihualá'>
+    <option value='Candelaria Loxicha'>
+    <option value='Ciénega de Zimatlán'>
+    <option value='Ciudad Ixtepec'>
+    <option value='Coatecas Altas'>
+    <option value='Coicoyán de las Flores'>
+    <option value='La Compañía'>
+    <option value='Concepción Buenavista'>
+    <option value='Concepción Pápalo'>
+    <option value='Constancia del Rosario'>
+    <option value='Cosolapa'>
+    <option value='Cosoltepec'>
+    <option value='Cuilápam de Guerrero'>
+    <option value='Cuyamecalco Villa de Zaragoza'>
+    <option value='Chahuites'>
+    <option value='Chalcatongo de Hidalgo'>
+    <option value='Chiquihuitlán de Benito Juárez'>
+    <option value='Heroica Ciudad de Ejutla de Crespo'>
+    <option value='Eloxochitlán de Flores Magón'>
+    <option value='El Espinal'>
+    <option value='Tamazulápam del Espíritu Santo'>
+    <option value='Fresnillo de Trujano'>
+    <option value='Guadalupe Etla'>
+    <option value='Guadalupe de Ramírez'>
+    <option value='Guelatao de Juárez'>
+    <option value='Guevea de Humboldt'>
+    <option value='Mesones Hidalgo'>
+    <option value='Villa Hidalgo'>
+    <option value='Heroica Ciudad de Huajuapan de León'>
+    <option value='Huautepec'>
+    <option value='Huautla de Jiménez'>
+    <option value='Ixtlán de Juárez'>
+    <option value='Juchitán de Zaragoza'>
+    <option value='Loma Bonita'>
+    <option value='Magdalena Apasco'>
+    <option value='Magdalena Jaltepec'>
+    <option value='Santa Magdalena Jicotlán'>
+    <option value='Magdalena Mixtepec'>
+    <option value='Magdalena Ocotlán'>
+    <option value='Magdalena Peñasco'>
+    <option value='Magdalena Teitipac'>
+    <option value='Magdalena Tequisistlán'>
+    <option value='Magdalena Tlacotepec'>
+    <option value='Magdalena Zahuatlán'>
+    <option value='Mariscala de Juárez'>
+    <option value='Mártires de Tacubaya'>
+    <option value='Matías Romero Avendaño'>
+    <option value='Mazatlán Villa de Flores'>
+    <option value='Miahuatlán de Porfirio Díaz'>
+    <option value='Mixistlán de la Reforma'>
+    <option value='Monjas'>
+    <option value='Natividad'>
+    <option value='Nazareno Etla'>
+    <option value='Nejapa de Madero'>
+    <option value='Ixpantepec Nieves'>
+    <option value='Santiago Niltepec'>
+    <option value='Oaxaca de Juárez'>
+    <option value='Ocotlán de Morelos'>
+    <option value='La Pe'>
+    <option value='Pinotepa de Don Luis'>
+    <option value='Pluma Hidalgo'>
+    <option value='San José del Progreso'>
+    <option value='Putla Villa de Guerrero'>
+    <option value='Santa Catarina Quioquitani'>
+    <option value='Reforma de Pineda'>
+    <option value='La Reforma'>
+    <option value='Reyes Etla'>
+    <option value='Rojas de Cuauhtémoc'>
+    <option value='Salina Cruz'>
+    <option value='San Agustín Amatengo'>
+    <option value='San Agustín Atenango'>
+    <option value='San Agustín Chayuco'>
+    <option value='San Agustín de las Juntas'>
+    <option value='San Agustín Etla'>
+    <option value='San Agustín Loxicha'>
+    <option value='San Agustín Tlacotepec'>
+    <option value='San Agustín Yatareni'>
+    <option value='San Andrés Cabecera Nueva'>
+    <option value='San Andrés Dinicuiti'>
+    <option value='San Andrés Huaxpaltepec'>
+    <option value='San Andrés Huayápam'>
+    <option value='San Andrés Ixtlahuaca'>
+    <option value='San Andrés Lagunas'>
+    <option value='San Andrés Nuxiño'>
+    <option value='San Andrés Paxtlán'>
+    <option value='San Andrés Sinaxtla'>
+    <option value='San Andrés Solaga'>
+    <option value='San Andrés Teotilálpam'>
+    <option value='San Andrés Tepetlapa'>
+    <option value='San Andrés Yaá'>
+    <option value='San Andrés Zabache'>
+    <option value='San Andrés Zautla'>
+    <option value='San Antonino Castillo Velasco'>
+    <option value='San Antonino el Alto'>
+    <option value='San Antonino Monte Verde'>
+    <option value='San Antonio Acutla'>
+    <option value='San Antonio de la Cal'>
+    <option value='San Antonio Huitepec'>
+    <option value='San Antonio Nanahuatípam'>
+    <option value='San Antonio Sinicahua'>
+    <option value='San Antonio Tepetlapa'>
+    <option value='San Baltazar Chichicápam'>
+    <option value='San Baltazar Loxicha'>
+    <option value='San Baltazar Yatzachi el Bajo'>
+    <option value='San Bartolo Coyotepec'>
+    <option value='San Bartolomé Ayautla'>
+    <option value='San Bartolomé Loxicha'>
+    <option value='San Bartolomé Quialana'>
+    <option value='San Bartolomé Yucuañe'>
+    <option value='San Bartolomé Zoogocho'>
+    <option value='San Bartolo Soyaltepec'>
+    <option value='San Bartolo Yautepec'>
+    <option value='San Bernardo Mixtepec'>
+    <option value='San Blas Atempa'>
+    <option value='San Carlos Yautepec'>
+    <option value='San Cristóbal Amatlán'>
+    <option value='San Cristóbal Amoltepec'>
+    <option value='San Cristóbal Lachirioag'>
+    <option value='San Cristóbal Suchixtlahuaca'>
+    <option value='San Dionisio del Mar'>
+    <option value='San Dionisio Ocotepec'>
+    <option value='San Dionisio Ocotlán'>
+    <option value='San Esteban Atatlahuca'>
+    <option value='San Felipe Jalapa de Díaz'>
+    <option value='San Felipe Tejalápam'>
+    <option value='San Felipe Usila'>
+    <option value='San Francisco Cahuacuá'>
+    <option value='San Francisco Cajonos'>
+    <option value='San Francisco Chapulapa'>
+    <option value='San Francisco Chindúa'>
+    <option value='San Francisco del Mar'>
+    <option value='San Francisco Huehuetlán'>
+    <option value='San Francisco Ixhuatán'>
+    <option value='San Francisco Jaltepetongo'>
+    <option value='San Francisco Lachigoló'>
+    <option value='San Francisco Logueche'>
+    <option value='San Francisco Nuxaño'>
+    <option value='San Francisco Ozolotepec'>
+    <option value='San Francisco Sola'>
+    <option value='San Francisco Telixtlahuaca'>
+    <option value='San Francisco Teopan'>
+    <option value='San Francisco Tlapancingo'>
+    <option value='San Gabriel Mixtepec'>
+    <option value='San Ildefonso Amatlán'>
+    <option value='San Ildefonso Sola'>
+    <option value='San Ildefonso Villa Alta'>
+    <option value='San Jacinto Amilpas'>
+    <option value='San Jacinto Tlacotepec'>
+    <option value='San Jerónimo Coatlán'>
+    <option value='San Jerónimo Silacayoapilla'>
+    <option value='San Jerónimo Sosola'>
+    <option value='San Jerónimo Taviche'>
+    <option value='San Jerónimo Tecóatl'>
+    <option value='San Jorge Nuchita'>
+    <option value='San José Ayuquila'>
+    <option value='San José Chiltepec'>
+    <option value='San José del Peñasco'>
+    <option value='San José Estancia Grande'>
+    <option value='San José Independencia'>
+    <option value='San José Lachiguiri'>
+    <option value='San José Tenango'>
+    <option value='San Juan Achiutla'>
+    <option value='San Juan Atepec'>
+    <option value='Ánimas Trujano'>
+    <option value='San Juan Bautista Atatlahuca'>
+    <option value='San Juan Bautista Coixtlahuaca'>
+    <option value='San Juan Bautista Cuicatlán'>
+    <option value='San Juan Bautista Guelache'>
+    <option value='San Juan Bautista Jayacatlán'>
+    <option value='San Juan Bautista Lo de Soto'>
+    <option value='San Juan Bautista Suchitepec'>
+    <option value='San Juan Bautista Tlacoatzintepec'>
+    <option value='San Juan Bautista Tlachichilco'>
+    <option value='San Juan Bautista Tuxtepec'>
+    <option value='San Juan Cacahuatepec'>
+    <option value='San Juan Cieneguilla'>
+    <option value='San Juan Coatzóspam'>
+    <option value='San Juan Colorado'>
+    <option value='San Juan Comaltepec'>
+    <option value='San Juan Cotzocón'>
+    <option value='San Juan Chicomezúchil'>
+    <option value='San Juan Chilateca'>
+    <option value='San Juan del Estado'>
+    <option value='San Juan del Río'>
+    <option value='San Juan Diuxi'>
+    <option value='San Juan Evangelista Analco'>
+    <option value='San Juan Guelavía'>
+    <option value='San Juan Guichicovi'>
+    <option value='San Juan Ihualtepec'>
+    <option value='San Juan Juquila Mixes'>
+    <option value='San Juan Juquila Vijanos'>
+    <option value='San Juan Lachao'>
+    <option value='San Juan Lachigalla'>
+    <option value='San Juan Lajarcia'>
+    <option value='San Juan Lalana'>
+    <option value='San Juan de los Cués'>
+    <option value='San Juan Mazatlán'>
+    <option value='San Juan Mixtepec'>
+    <option value='San Juan Mixtepec.'>
+    <option value='San Juan Ñumí'>
+    <option value='San Juan Ozolotepec'>
+    <option value='San Juan Petlapa'>
+    <option value='San Juan Quiahije'>
+    <option value='San Juan Quiotepec'>
+    <option value='San Juan Sayultepec'>
+    <option value='San Juan Tabaá'>
+    <option value='San Juan Tamazola'>
+    <option value='San Juan Teita'>
+    <option value='San Juan Teitipac'>
+    <option value='San Juan Tepeuxila'>
+    <option value='San Juan Teposcolula'>
+    <option value='San Juan Yaeé'>
+    <option value='San Juan Yatzona'>
+    <option value='San Juan Yucuita'>
+    <option value='San Lorenzo'>
+    <option value='San Lorenzo Albarradas'>
+    <option value='San Lorenzo Cacaotepec'>
+    <option value='San Lorenzo Cuaunecuiltitla'>
+    <option value='San Lorenzo Texmelúcan'>
+    <option value='San Lorenzo Victoria'>
+    <option value='San Lucas Camotlán'>
+    <option value='San Lucas Ojitlán'>
+    <option value='San Lucas Quiaviní'>
+    <option value='San Lucas Zoquiápam'>
+    <option value='San Luis Amatlán'>
+    <option value='San Marcial Ozolotepec'>
+    <option value='San Marcos Arteaga'>
+    <option value='San Martín de los Cansecos'>
+    <option value='San Martín Huamelúlpam'>
+    <option value='San Martín Itunyoso'>
+    <option value='San Martín Lachilá'>
+    <option value='San Martín Peras'>
+    <option value='San Martín Tilcajete'>
+    <option value='San Martín Toxpalan'>
+    <option value='San Martín Zacatepec'>
+    <option value='San Mateo Cajonos'>
+    <option value='Capulálpam de Méndez'>
+    <option value='San Mateo del Mar'>
+    <option value='San Mateo Yoloxochitlán'>
+    <option value='San Mateo Etlatongo'>
+    <option value='San Mateo Nejápam'>
+    <option value='San Mateo Peñasco'>
+    <option value='San Mateo Piñas'>
+    <option value='San Mateo Río Hondo'>
+    <option value='San Mateo Sindihui'>
+    <option value='San Mateo Tlapiltepec'>
+    <option value='San Melchor Betaza'>
+    <option value='San Miguel Achiutla'>
+    <option value='San Miguel Ahuehuetitlán'>
+    <option value='San Miguel Aloápam'>
+    <option value='San Miguel Amatitlán'>
+    <option value='San Miguel Amatlán'>
+    <option value='San Miguel Coatlán'>
+    <option value='San Miguel Chicahua'>
+    <option value='San Miguel Chimalapa'>
+    <option value='San Miguel del Puerto'>
+    <option value='San Miguel del Río'>
+    <option value='San Miguel Ejutla'>
+    <option value='San Miguel el Grande'>
+    <option value='San Miguel Huautla'>
+    <option value='San Miguel Mixtepec'>
+    <option value='San Miguel Panixtlahuaca'>
+    <option value='San Miguel Peras'>
+    <option value='San Miguel Piedras'>
+    <option value='San Miguel Quetzaltepec'>
+    <option value='San Miguel Santa Flor'>
+    <option value='Villa Sola de Vega'>
+    <option value='San Miguel Soyaltepec'>
+    <option value='San Miguel Suchixtepec'>
+    <option value='Villa Talea de Castro'>
+    <option value='San Miguel Tecomatlán'>
+    <option value='San Miguel Tenango'>
+    <option value='San Miguel Tequixtepec'>
+    <option value='San Miguel Tilquiápam'>
+    <option value='San Miguel Tlacamama'>
+    <option value='San Miguel Tlacotepec'>
+    <option value='San Miguel Tulancingo'>
+    <option value='San Miguel Yotao'>
+    <option value='San Nicolás'>
+    <option value='San Nicolás Hidalgo'>
+    <option value='San Pablo Coatlán'>
+    <option value='San Pablo Cuatro Venados'>
+    <option value='San Pablo Etla'>
+    <option value='San Pablo Huitzo'>
+    <option value='San Pablo Huixtepec'>
+    <option value='San Pablo Macuiltianguis'>
+    <option value='San Pablo Tijaltepec'>
+    <option value='San Pablo Villa de Mitla'>
+    <option value='San Pablo Yaganiza'>
+    <option value='San Pedro Amuzgos'>
+    <option value='San Pedro Apóstol'>
+    <option value='San Pedro Atoyac'>
+    <option value='San Pedro Cajonos'>
+    <option value='San Pedro Coxcaltepec Cántaros'>
+    <option value='San Pedro Comitancillo'>
+    <option value='San Pedro el Alto'>
+    <option value='San Pedro Huamelula'>
+    <option value='San Pedro Huilotepec'>
+    <option value='San Pedro Ixcatlán'>
+    <option value='San Pedro Ixtlahuaca'>
+    <option value='San Pedro Jaltepetongo'>
+    <option value='San Pedro Jicayán'>
+    <option value='San Pedro Jocotipac'>
+    <option value='San Pedro Juchatengo'>
+    <option value='San Pedro Mártir'>
+    <option value='San Pedro Mártir Quiechapa'>
+    <option value='San Pedro Mártir Yucuxaco'>
+    <option value='San Pedro Mixtepec'>
+    <option value='San Pedro Mixtepec'>
+    <option value='San Pedro Molinos'>
+    <option value='San Pedro Nopala'>
+    <option value='San Pedro Ocopetatillo'>
+    <option value='San Pedro Ocotepec'>
+    <option value='San Pedro Pochutla'>
+    <option value='San Pedro Quiatoni'>
+    <option value='San Pedro Sochiápam'>
+    <option value='San Pedro Tapanatepec'>
+    <option value='San Pedro Taviche'>
+    <option value='San Pedro Teozacoalco'>
+    <option value='San Pedro Teutila'>
+    <option value='San Pedro Tidaá'>
+    <option value='San Pedro Topiltepec'>
+    <option value='San Pedro Totolápam'>
+    <option value='Villa de Tututepec'>
+    <option value='San Pedro Yaneri'>
+    <option value='San Pedro Yólox'>
+    <option value='San Pedro y San Pablo Ayutla'>
+    <option value='Villa de Etla'>
+    <option value='San Pedro y San Pablo Teposcolula'>
+    <option value='San Pedro y San Pablo Tequixtepec'>
+    <option value='San Pedro Yucunama'>
+    <option value='San Raymundo Jalpan'>
+    <option value='San Sebastián Abasolo'>
+    <option value='San Sebastián Coatlán'>
+    <option value='San Sebastián Ixcapa'>
+    <option value='San Sebastián Nicananduta'>
+    <option value='San Sebastián Río Hondo'>
+    <option value='San Sebastián Tecomaxtlahuaca'>
+    <option value='San Sebastián Teitipac'>
+    <option value='San Sebastián Tutla'>
+    <option value='San Simón Almolongas'>
+    <option value='San Simón Zahuatlán'>
+    <option value='Santa Ana'>
+    <option value='Santa Ana Ateixtlahuaca'>
+    <option value='Santa Ana Cuauhtémoc'>
+    <option value='Santa Ana del Valle'>
+    <option value='Santa Ana Tavela'>
+    <option value='Santa Ana Tlapacoyan'>
+    <option value='Santa Ana Yareni'>
+    <option value='Santa Ana Zegache'>
+    <option value='Santa Catalina Quierí'>
+    <option value='Santa Catarina Cuixtla'>
+    <option value='Santa Catarina Ixtepeji'>
+    <option value='Santa Catarina Juquila'>
+    <option value='Santa Catarina Lachatao'>
+    <option value='Santa Catarina Loxicha'>
+    <option value='Santa Catarina Mechoacán'>
+    <option value='Santa Catarina Minas'>
+    <option value='Santa Catarina Quiané'>
+    <option value='Santa Catarina Tayata'>
+    <option value='Santa Catarina Ticuá'>
+    <option value='Santa Catarina Yosonotú'>
+    <option value='Santa Catarina Zapoquila'>
+    <option value='Santa Cruz Acatepec'>
+    <option value='Santa Cruz Amilpas'>
+    <option value='Santa Cruz de Bravo'>
+    <option value='Santa Cruz Itundujia'>
+    <option value='Santa Cruz Mixtepec'>
+    <option value='Santa Cruz Nundaco'>
+    <option value='Santa Cruz Papalutla'>
+    <option value='Santa Cruz Tacache de Mina'>
+    <option value='Santa Cruz Tacahua'>
+    <option value='Santa Cruz Tayata'>
+    <option value='Santa Cruz Xitla'>
+    <option value='Santa Cruz Xoxocotlán'>
+    <option value='Santa Cruz Zenzontepec'>
+    <option value='Santa Gertrudis'>
+    <option value='Santa Inés del Monte'>
+    <option value='Santa Inés Yatzeche'>
+    <option value='Santa Lucía del Camino'>
+    <option value='Santa Lucía Miahuatlán'>
+    <option value='Santa Lucía Monteverde'>
+    <option value='Santa Lucía Ocotlán'>
+    <option value='Santa María Alotepec'>
+    <option value='Santa María Apazco'>
+    <option value='Santa María la Asunción'>
+    <option value='Heroica Ciudad de Tlaxiaco'>
+    <option value='Ayoquezco de Aldama'>
+    <option value='Santa María Atzompa'>
+    <option value='Santa María Camotlán'>
+    <option value='Santa María Colotepec'>
+    <option value='Santa María Cortijo'>
+    <option value='Santa María Coyotepec'>
+    <option value='Santa María Chachoápam'>
+    <option value='Villa de Chilapa de Díaz'>
+    <option value='Santa María Chilchotla'>
+    <option value='Santa María Chimalapa'>
+    <option value='Santa María del Rosario'>
+    <option value='Santa María del Tule'>
+    <option value='Santa María Ecatepec'>
+    <option value='Santa María Guelacé'>
+    <option value='Santa María Guienagati'>
+    <option value='Santa María Huatulco'>
+    <option value='Santa María Huazolotitlán'>
+    <option value='Santa María Ipalapa'>
+    <option value='Santa María Ixcatlán'>
+    <option value='Santa María Jacatepec'>
+    <option value='Santa María Jalapa del Marqués'>
+    <option value='Santa María Jaltianguis'>
+    <option value='Santa María Lachixío'>
+    <option value='Santa María Mixtequilla'>
+    <option value='Santa María Nativitas'>
+    <option value='Santa María Nduayaco'>
+    <option value='Santa María Ozolotepec'>
+    <option value='Santa María Pápalo'>
+    <option value='Santa María Peñoles'>
+    <option value='Santa María Petapa'>
+    <option value='Santa María Quiegolani'>
+    <option value='Santa María Sola'>
+    <option value='Santa María Tataltepec'>
+    <option value='Santa María Tecomavaca'>
+    <option value='Santa María Temaxcalapa'>
+    <option value='Santa María Temaxcaltepec'>
+    <option value='Santa María Teopoxco'>
+    <option value='Santa María Tepantlali'>
+    <option value='Santa María Texcatitlán'>
+    <option value='Santa María Tlahuitoltepec'>
+    <option value='Santa María Tlalixtac'>
+    <option value='Santa María Tonameca'>
+    <option value='Santa María Totolapilla'>
+    <option value='Santa María Xadani'>
+    <option value='Santa María Yalina'>
+    <option value='Santa María Yavesía'>
+    <option value='Santa María Yolotepec'>
+    <option value='Santa María Yosoyúa'>
+    <option value='Santa María Yucuhiti'>
+    <option value='Santa María Zacatepec'>
+    <option value='Santa María Zaniza'>
+    <option value='Santa María Zoquitlán'>
+    <option value='Santiago Amoltepec'>
+    <option value='Santiago Apoala'>
+    <option value='Santiago Apóstol'>
+    <option value='Santiago Astata'>
+    <option value='Santiago Atitlán'>
+    <option value='Santiago Ayuquililla'>
+    <option value='Santiago Cacaloxtepec'>
+    <option value='Santiago Camotlán'>
+    <option value='Santiago Comaltepec'>
+    <option value='Villa de Santiago Chazumba'>
+    <option value='Santiago Choápam'>
+    <option value='Santiago del Río'>
+    <option value='Santiago Huajolotitlán'>
+    <option value='Santiago Huauclilla'>
+    <option value='Santiago Ihuitlán Plumas'>
+    <option value='Santiago Ixcuintepec'>
+    <option value='Santiago Ixtayutla'>
+    <option value='Santiago Jamiltepec'>
+    <option value='Santiago Jocotepec'>
+    <option value='Santiago Juxtlahuaca'>
+    <option value='Santiago Lachiguiri'>
+    <option value='Santiago Lalopa'>
+    <option value='Santiago Laollaga'>
+    <option value='Santiago Laxopa'>
+    <option value='Santiago Llano Grande'>
+    <option value='Santiago Matatlán'>
+    <option value='Santiago Miltepec'>
+    <option value='Santiago Minas'>
+    <option value='Santiago Nacaltepec'>
+    <option value='Santiago Nejapilla'>
+    <option value='Santiago Nundiche'>
+    <option value='Santiago Nuyoó'>
+    <option value='Santiago Pinotepa Nacional'>
+    <option value='Santiago Suchilquitongo'>
+    <option value='Santiago Tamazola'>
+    <option value='Santiago Tapextla'>
+    <option value='Villa Tejúpam de la Unión'>
+    <option value='Santiago Tenango'>
+    <option value='Santiago Tepetlapa'>
+    <option value='Santiago Tetepec'>
+    <option value='Santiago Texcalcingo'>
+    <option value='Santiago Textitlán'>
+    <option value='Santiago Tilantongo'>
+    <option value='Santiago Tillo'>
+    <option value='Santiago Tlazoyaltepec'>
+    <option value='Santiago Xanica'>
+    <option value='Santiago Xiacuí'>
+    <option value='Santiago Yaitepec'>
+    <option value='Santiago Yaveo'>
+    <option value='Santiago Yolomécatl'>
+    <option value='Santiago Yosondúa'>
+    <option value='Santiago Yucuyachi'>
+    <option value='Santiago Zacatepec'>
+    <option value='Santiago Zoochila'>
+    <option value='Nuevo Zoquiápam'>
+    <option value='Santo Domingo Ingenio'>
+    <option value='Santo Domingo Albarradas'>
+    <option value='Santo Domingo Armenta'>
+    <option value='Santo Domingo Chihuitán'>
+    <option value='Santo Domingo de Morelos'>
+    <option value='Santo Domingo Ixcatlán'>
+    <option value='Santo Domingo Nuxaá'>
+    <option value='Santo Domingo Ozolotepec'>
+    <option value='Santo Domingo Petapa'>
+    <option value='Santo Domingo Roayaga'>
+    <option value='Santo Domingo Tehuantepec'>
+    <option value='Santo Domingo Teojomulco'>
+    <option value='Santo Domingo Tepuxtepec'>
+    <option value='Santo Domingo Tlatayápam'>
+    <option value='Santo Domingo Tomaltepec'>
+    <option value='Santo Domingo Tonalá'>
+    <option value='Santo Domingo Tonaltepec'>
+    <option value='Santo Domingo Xagacía'>
+    <option value='Santo Domingo Yanhuitlán'>
+    <option value='Santo Domingo Yodohino'>
+    <option value='Santo Domingo Zanatepec'>
+    <option value='Santos Reyes Nopala'>
+    <option value='Santos Reyes Pápalo'>
+    <option value='Santos Reyes Tepejillo'>
+    <option value='Santos Reyes Yucuná'>
+    <option value='Santo Tomás Jalieza'>
+    <option value='Santo Tomás Mazaltepec'>
+    <option value='Santo Tomás Ocotepec'>
+    <option value='Santo Tomás Tamazulapan'>
+    <option value='San Vicente Coatlán'>
+    <option value='San Vicente Lachixío'>
+    <option value='San Vicente Nuñú'>
+    <option value='Silacayoápam'>
+    <option value='Sitio de Xitlapehua'>
+    <option value='Soledad Etla'>
+    <option value='Villa de Tamazulápam del Progreso'>
+    <option value='Tanetze de Zaragoza'>
+    <option value='Taniche'>
+    <option value='Tataltepec de Valdés'>
+    <option value='Teococuilco de Marcos Pérez'>
+    <option value='Teotitlán de Flores Magón'>
+    <option value='Teotitlán del Valle'>
+    <option value='Teotongo'>
+    <option value='Tepelmeme Villa de Morelos'>
+    <option value='Heroica Villa Tezoatlán de Segura y Luna, Cuna de la Independencia de Oaxaca'>
+    <option value='San Jerónimo Tlacochahuaya'>
+    <option value='Tlacolula de Matamoros'>
+    <option value='Tlacotepec Plumas'>
+    <option value='Tlalixtac de Cabrera'>
+    <option value='Totontepec Villa de Morelos'>
+    <option value='Trinidad Zaachila'>
+    <option value='La Trinidad Vista Hermosa'>
+    <option value='Unión Hidalgo'>
+    <option value='Valerio Trujano'>
+    <option value='San Juan Bautista Valle Nacional'>
+    <option value='Villa Díaz Ordaz'>
+    <option value='Yaxe'>
+    <option value='Magdalena Yodocono de Porfirio Díaz'>
+    <option value='Yogana'>
+    <option value='Yutanduchi de Guerrero'>
+    <option value='Villa de Zaachila'>
+    <option value='San Mateo Yucutindoo'>
+    <option value='Zapotitlán Lagunas'>
+    <option value='Zapotitlán Palmas'>
+    <option value='Santa Inés de Zaragoza'>
+    <option value='Zimatlán de Álvarez'>
+    </datalist>
+
+    <p>LISTADO DE MUNICIPIOS DEL ESTADO DE OAXACA</p>
+    <select>
+        
+
+        <option>Abejones</option>
+        <option>Acatlán de Pérez Figueroa</option>
+        <option>Asunción Cacalotepec</option>
+        <option>Asunción Cuyotepeji</option>
+        <option>Asunción Ixtaltepec</option>
+        <option>Asunción Nochixtlán</option>
+        <option>Asunción Ocotlán</option>
+        <option>Asunción Tlacolulita</option>
+        <option>Ayotzintepec</option>
+        <option>El Barrio de la Soledad</option>
+        <option>Calihualá</option>
+        <option>Candelaria Loxicha</option>
+        <option>Ciénega de Zimatlán</option>
+        <option>Ciudad Ixtepec</option>
+        <option>Coatecas Altas</option>
+        <option>Coicoyán de las Flores</option>
+        <option>La Compañía</option>
+        <option>Concepción Buenavista</option>
+        <option>Concepción Pápalo</option>
+        <option>Constancia del Rosario</option>
+        <option>Cosolapa</option>
+        <option>Cosoltepec</option>
+        <option>Cuilápam de Guerrero</option>
+        <option>Cuyamecalco Villa de Zaragoza</option>
+        <option>Chahuites</option>
+        <option>Chalcatongo de Hidalgo</option>
+        <option>Chiquihuitlán de Benito Juárez</option>
+        <option>Heroica Ciudad de Ejutla de Crespo</option>
+        <option>Eloxochitlán de Flores Magón</option>
+        <option>El Espinal</option>
+        <option>Tamazulápam del Espíritu Santo</option>
+        <option>Fresnillo de Trujano</option>
+        <option>Guadalupe Etla</option>
+        <option>Guadalupe de Ramírez</option>
+        <option>Guelatao de Juárez</option>
+        <option>Guevea de Humboldt</option>
+        <option>Mesones Hidalgo</option>
+        <option>Villa Hidalgo</option>
+        <option>Heroica Ciudad de Huajuapan de León</option>
+        <option>Huautepec</option>
+        <option>Huautla de Jiménez</option>
+        <option>Ixtlán de Juárez</option>
+        <option>Juchitán de Zaragoza</option>
+        <option>Loma Bonita</option>
+        <option>Magdalena Apasco</option>
+        <option>Magdalena Jaltepec</option>
+        <option>Santa Magdalena Jicotlán</option>
+        <option>Magdalena Mixtepec</option>
+        <option>Magdalena Ocotlán</option>
+        <option>Magdalena Peñasco</option>
+        <option>Magdalena Teitipac</option>
+        <option>Magdalena Tequisistlán</option>
+        <option>Magdalena Tlacotepec</option>
+        <option>Magdalena Zahuatlán</option>
+        <option>Mariscala de Juárez</option>
+        <option>Mártires de Tacubaya</option>
+        <option>Matías Romero Avendaño</option>
+        <option>Mazatlán Villa de Flores</option>
+        <option>Miahuatlán de Porfirio Díaz</option>
+        <option>Mixistlán de la Reforma</option>
+        <option>Monjas</option>
+        <option>Natividad</option>
+        <option>Nazareno Etla</option>
+        <option>Nejapa de Madero</option>
+        <option>Ixpantepec Nieves</option>
+        <option>Santiago Niltepec</option>
+        <option>Oaxaca de Juárez</option>
+        <option>Ocotlán de Morelos</option>
+        <option>La Pe</option>
+        <option>Pinotepa de Don Luis</option>
+        <option>Pluma Hidalgo</option>
+        <option>San José del Progreso</option>
+        <option>Putla Villa de Guerrero</option>
+        <option>Santa Catarina Quioquitani</option>
+        <option>Reforma de Pineda</option>
+        <option>La Reforma</option>
+        <option>Reyes Etla</option>
+        <option>Rojas de Cuauhtémoc</option>
+        <option>Salina Cruz</option>
+        <option>San Agustín Amatengo</option>
+        <option>San Agustín Atenango</option>
+        <option>San Agustín Chayuco</option>
+        <option>San Agustín de las Juntas</option>
+        <option>San Agustín Etla</option>
+        <option>San Agustín Loxicha</option>
+        <option>San Agustín Tlacotepec</option>
+        <option>San Agustín Yatareni</option>
+        <option>San Andrés Cabecera Nueva</option>
+        <option>San Andrés Dinicuiti</option>
+        <option>San Andrés Huaxpaltepec</option>
+        <option>San Andrés Huayápam</option>
+        <option>San Andrés Ixtlahuaca</option>
+        <option>San Andrés Lagunas</option>
+        <option>San Andrés Nuxiño</option>
+        <option>San Andrés Paxtlán</option>
+        <option>San Andrés Sinaxtla</option>
+        <option>San Andrés Solaga</option>
+        <option>San Andrés Teotilálpam</option>
+        <option>San Andrés Tepetlapa</option>
+        <option>San Andrés Yaá</option>
+        <option>San Andrés Zabache</option>
+        <option>San Andrés Zautla</option>
+        <option>San Antonino Castillo Velasco</option>
+        <option>San Antonino el Alto</option>
+        <option>San Antonino Monte Verde</option>
+        <option>San Antonio Acutla</option>
+        <option>San Antonio de la Cal</option>
+        <option>San Antonio Huitepec</option>
+        <option>San Antonio Nanahuatípam</option>
+        <option>San Antonio Sinicahua</option>
+        <option>San Antonio Tepetlapa</option>
+        <option>San Baltazar Chichicápam</option>
+        <option>San Baltazar Loxicha</option>
+        <option>San Baltazar Yatzachi el Bajo</option>
+        <option>San Bartolo Coyotepec</option>
+        <option>San Bartolomé Ayautla</option>
+        <option>San Bartolomé Loxicha</option>
+        <option>San Bartolomé Quialana</option>
+        <option>San Bartolomé Yucuañe</option>
+        <option>San Bartolomé Zoogocho</option>
+        <option>San Bartolo Soyaltepec</option>
+        <option>San Bartolo Yautepec</option>
+        <option>San Bernardo Mixtepec</option>
+        <option>San Blas Atempa</option>
+        <option>San Carlos Yautepec</option>
+        <option>San Cristóbal Amatlán</option>
+        <option>San Cristóbal Amoltepec</option>
+        <option>San Cristóbal Lachirioag</option>
+        <option>San Cristóbal Suchixtlahuaca</option>
+        <option>San Dionisio del Mar</option>
+        <option>San Dionisio Ocotepec</option>
+        <option>San Dionisio Ocotlán</option>
+        <option>San Esteban Atatlahuca</option>
+        <option>San Felipe Jalapa de Díaz</option>
+        <option>San Felipe Tejalápam</option>
+        <option>San Felipe Usila</option>
+        <option>San Francisco Cahuacuá</option>
+        <option>San Francisco Cajonos</option>
+        <option>San Francisco Chapulapa</option>
+        <option>San Francisco Chindúa</option>
+        <option>San Francisco del Mar</option>
+        <option>San Francisco Huehuetlán</option>
+        <option>San Francisco Ixhuatán</option>
+        <option>San Francisco Jaltepetongo</option>
+        <option>San Francisco Lachigoló</option>
+        <option>San Francisco Logueche</option>
+        <option>San Francisco Nuxaño</option>
+        <option>San Francisco Ozolotepec</option>
+        <option>San Francisco Sola</option>
+        <option>San Francisco Telixtlahuaca</option>
+        <option>San Francisco Teopan</option>
+        <option>San Francisco Tlapancingo</option>
+        <option>San Gabriel Mixtepec</option>
+        <option>San Ildefonso Amatlán</option>
+        <option>San Ildefonso Sola</option>
+        <option>San Ildefonso Villa Alta</option>
+        <option>San Jacinto Amilpas</option>
+        <option>San Jacinto Tlacotepec</option>
+        <option>San Jerónimo Coatlán</option>
+        <option>San Jerónimo Silacayoapilla</option>
+        <option>San Jerónimo Sosola</option>
+        <option>San Jerónimo Taviche</option>
+        <option>San Jerónimo Tecóatl</option>
+        <option>San Jorge Nuchita</option>
+        <option>San José Ayuquila</option>
+        <option>San José Chiltepec</option>
+        <option>San José del Peñasco</option>
+        <option>San José Estancia Grande</option>
+        <option>San José Independencia</option>
+        <option>San José Lachiguiri</option>
+        <option>San José Tenango</option>
+        <option>San Juan Achiutla</option>
+        <option>San Juan Atepec</option>
+        <option>Ánimas Trujano</option>
+        <option>San Juan Bautista Atatlahuca</option>
+        <option>San Juan Bautista Coixtlahuaca</option>
+        <option>San Juan Bautista Cuicatlán</option>
+        <option>San Juan Bautista Guelache</option>
+        <option>San Juan Bautista Jayacatlán</option>
+        <option>San Juan Bautista Lo de Soto</option>
+        <option>San Juan Bautista Suchitepec</option>
+        <option>San Juan Bautista Tlacoatzintepec</option>
+        <option>San Juan Bautista Tlachichilco</option>
+        <option>San Juan Bautista Tuxtepec</option>
+        <option>San Juan Cacahuatepec</option>
+        <option>San Juan Cieneguilla</option>
+        <option>San Juan Coatzóspam</option>
+        <option>San Juan Colorado</option>
+        <option>San Juan Comaltepec</option>
+        <option>San Juan Cotzocón</option>
+        <option>San Juan Chicomezúchil</option>
+        <option>San Juan Chilateca</option>
+        <option>San Juan del Estado</option>
+        <option>San Juan del Río</option>
+        <option>San Juan Diuxi</option>
+        <option>San Juan Evangelista Analco</option>
+        <option>San Juan Guelavía</option>
+        <option>San Juan Guichicovi</option>
+        <option>San Juan Ihualtepec</option>
+        <option>San Juan Juquila Mixes</option>
+        <option>San Juan Juquila Vijanos</option>
+        <option>San Juan Lachao</option>
+        <option>San Juan Lachigalla</option>
+        <option>San Juan Lajarcia</option>
+        <option>San Juan Lalana</option>
+        <option>San Juan de los Cués</option>
+        <option>San Juan Mazatlán</option>
+        <option>San Juan Mixtepec</option>
+        <option>San Juan Mixtepec.</option>
+        <option>San Juan Ñumí</option>
+        <option>San Juan Ozolotepec</option>
+        <option>San Juan Petlapa</option>
+        <option>San Juan Quiahije</option>
+        <option>San Juan Quiotepec</option>
+        <option>San Juan Sayultepec</option>
+        <option>San Juan Tabaá</option>
+        <option>San Juan Tamazola</option>
+        <option>San Juan Teita</option>
+        <option>San Juan Teitipac</option>
+        <option>San Juan Tepeuxila</option>
+        <option>San Juan Teposcolula</option>
+        <option>San Juan Yaeé</option>
+        <option>San Juan Yatzona</option>
+        <option>San Juan Yucuita</option>
+        <option>San Lorenzo</option>
+        <option>San Lorenzo Albarradas</option>
+        <option>San Lorenzo Cacaotepec</option>
+        <option>San Lorenzo Cuaunecuiltitla</option>
+        <option>San Lorenzo Texmelúcan</option>
+        <option>San Lorenzo Victoria</option>
+        <option>San Lucas Camotlán</option>
+        <option>San Lucas Ojitlán</option>
+        <option>San Lucas Quiaviní</option>
+        <option>San Lucas Zoquiápam</option>
+        <option>San Luis Amatlán</option>
+        <option>San Marcial Ozolotepec</option>
+        <option>San Marcos Arteaga</option>
+        <option>San Martín de los Cansecos</option>
+        <option>San Martín Huamelúlpam</option>
+        <option>San Martín Itunyoso</option>
+        <option>San Martín Lachilá</option>
+        <option>San Martín Peras</option>
+        <option>San Martín Tilcajete</option>
+        <option>San Martín Toxpalan</option>
+        <option>San Martín Zacatepec</option>
+        <option>San Mateo Cajonos</option>
+        <option>Capulálpam de Méndez</option>
+        <option>San Mateo del Mar</option>
+        <option>San Mateo Yoloxochitlán</option>
+        <option>San Mateo Etlatongo</option>
+        <option>San Mateo Nejápam</option>
+        <option>San Mateo Peñasco</option>
+        <option>San Mateo Piñas</option>
+        <option>San Mateo Río Hondo</option>
+        <option>San Mateo Sindihui</option>
+        <option>San Mateo Tlapiltepec</option>
+        <option>San Melchor Betaza</option>
+        <option>San Miguel Achiutla</option>
+        <option>San Miguel Ahuehuetitlán</option>
+        <option>San Miguel Aloápam</option>
+        <option>San Miguel Amatitlán</option>
+        <option>San Miguel Amatlán</option>
+        <option>San Miguel Coatlán</option>
+        <option>San Miguel Chicahua</option>
+        <option>San Miguel Chimalapa</option>
+        <option>San Miguel del Puerto</option>
+        <option>San Miguel del Río</option>
+        <option>San Miguel Ejutla</option>
+        <option>San Miguel el Grande</option>
+        <option>San Miguel Huautla</option>
+        <option>San Miguel Mixtepec</option>
+        <option>San Miguel Panixtlahuaca</option>
+        <option>San Miguel Peras</option>
+        <option>San Miguel Piedras</option>
+        <option>San Miguel Quetzaltepec</option>
+        <option>San Miguel Santa Flor</option>
+        <option>Villa Sola de Vega</option>
+        <option>San Miguel Soyaltepec</option>
+        <option>San Miguel Suchixtepec</option>
+        <option>Villa Talea de Castro</option>
+        <option>San Miguel Tecomatlán</option>
+        <option>San Miguel Tenango</option>
+        <option>San Miguel Tequixtepec</option>
+        <option>San Miguel Tilquiápam</option>
+        <option>San Miguel Tlacamama</option>
+        <option>San Miguel Tlacotepec</option>
+        <option>San Miguel Tulancingo</option>
+        <option>San Miguel Yotao</option>
+        <option>San Nicolás</option>
+        <option>San Nicolás Hidalgo</option>
+        <option>San Pablo Coatlán</option>
+        <option>San Pablo Cuatro Venados</option>
+        <option>San Pablo Etla</option>
+        <option>San Pablo Huitzo</option>
+        <option>San Pablo Huixtepec</option>
+        <option>San Pablo Macuiltianguis</option>
+        <option>San Pablo Tijaltepec</option>
+        <option>San Pablo Villa de Mitla</option>
+        <option>San Pablo Yaganiza</option>
+        <option>San Pedro Amuzgos</option>
+        <option>San Pedro Apóstol</option>
+        <option>San Pedro Atoyac</option>
+        <option>San Pedro Cajonos</option>
+        <option>San Pedro Coxcaltepec Cántaros</option>
+        <option>San Pedro Comitancillo</option>
+        <option>San Pedro el Alto</option>
+        <option>San Pedro Huamelula</option>
+        <option>San Pedro Huilotepec</option>
+        <option>San Pedro Ixcatlán</option>
+        <option>San Pedro Ixtlahuaca</option>
+        <option>San Pedro Jaltepetongo</option>
+        <option>San Pedro Jicayán</option>
+        <option>San Pedro Jocotipac</option>
+        <option>San Pedro Juchatengo</option>
+        <option>San Pedro Mártir</option>
+        <option>San Pedro Mártir Quiechapa</option>
+        <option>San Pedro Mártir Yucuxaco</option>
+        <option>San Pedro Mixtepec</option>
+        <option>San Pedro Mixtepec</option>
+        <option>San Pedro Molinos</option>
+        <option>San Pedro Nopala</option>
+        <option>San Pedro Ocopetatillo</option>
+        <option>San Pedro Ocotepec</option>
+        <option>San Pedro Pochutla</option>
+        <option>San Pedro Quiatoni</option>
+        <option>San Pedro Sochiápam</option>
+        <option>San Pedro Tapanatepec</option>
+        <option>San Pedro Taviche</option>
+        <option>San Pedro Teozacoalco</option>
+        <option>San Pedro Teutila</option>
+        <option>San Pedro Tidaá</option>
+        <option>San Pedro Topiltepec</option>
+        <option>San Pedro Totolápam</option>
+        <option>Villa de Tututepec</option>
+        <option>San Pedro Yaneri</option>
+        <option>San Pedro Yólox</option>
+        <option>San Pedro y San Pablo Ayutla</option>
+        <option>Villa de Etla</option>
+        <option>San Pedro y San Pablo Teposcolula</option>
+        <option>San Pedro y San Pablo Tequixtepec</option>
+        <option>San Pedro Yucunama</option>
+        <option>San Raymundo Jalpan</option>
+        <option>San Sebastián Abasolo</option>
+        <option>San Sebastián Coatlán</option>
+        <option>San Sebastián Ixcapa</option>
+        <option>San Sebastián Nicananduta</option>
+        <option>San Sebastián Río Hondo</option>
+        <option>San Sebastián Tecomaxtlahuaca</option>
+        <option>San Sebastián Teitipac</option>
+        <option>San Sebastián Tutla</option>
+        <option>San Simón Almolongas</option>
+        <option>San Simón Zahuatlán</option>
+        <option>Santa Ana</option>
+        <option>Santa Ana Ateixtlahuaca</option>
+        <option>Santa Ana Cuauhtémoc</option>
+        <option>Santa Ana del Valle</option>
+        <option>Santa Ana Tavela</option>
+        <option>Santa Ana Tlapacoyan</option>
+        <option>Santa Ana Yareni</option>
+        <option>Santa Ana Zegache</option>
+        <option>Santa Catalina Quierí</option>
+        <option>Santa Catarina Cuixtla</option>
+        <option>Santa Catarina Ixtepeji</option>
+        <option>Santa Catarina Juquila</option>
+        <option>Santa Catarina Lachatao</option>
+        <option>Santa Catarina Loxicha</option>
+        <option>Santa Catarina Mechoacán</option>
+        <option>Santa Catarina Minas</option>
+        <option>Santa Catarina Quiané</option>
+        <option>Santa Catarina Tayata</option>
+        <option>Santa Catarina Ticuá</option>
+        <option>Santa Catarina Yosonotú</option>
+        <option>Santa Catarina Zapoquila</option>
+        <option>Santa Cruz Acatepec</option>
+        <option>Santa Cruz Amilpas</option>
+        <option>Santa Cruz de Bravo</option>
+        <option>Santa Cruz Itundujia</option>
+        <option>Santa Cruz Mixtepec</option>
+        <option>Santa Cruz Nundaco</option>
+        <option>Santa Cruz Papalutla</option>
+        <option>Santa Cruz Tacache de Mina</option>
+        <option>Santa Cruz Tacahua</option>
+        <option>Santa Cruz Tayata</option>
+        <option>Santa Cruz Xitla</option>
+        <option>Santa Cruz Xoxocotlán</option>
+        <option>Santa Cruz Zenzontepec</option>
+        <option>Santa Gertrudis</option>
+        <option>Santa Inés del Monte</option>
+        <option>Santa Inés Yatzeche</option>
+        <option>Santa Lucía del Camino</option>
+        <option>Santa Lucía Miahuatlán</option>
+        <option>Santa Lucía Monteverde</option>
+        <option>Santa Lucía Ocotlán</option>
+        <option>Santa María Alotepec</option>
+        <option>Santa María Apazco</option>
+        <option>Santa María la Asunción</option>
+        <option>Heroica Ciudad de Tlaxiaco</option>
+        <option>Ayoquezco de Aldama</option>
+        <option>Santa María Atzompa</option>
+        <option>Santa María Camotlán</option>
+        <option>Santa María Colotepec</option>
+        <option>Santa María Cortijo</option>
+        <option>Santa María Coyotepec</option>
+        <option>Santa María Chachoápam</option>
+        <option>Villa de Chilapa de Díaz</option>
+        <option>Santa María Chilchotla</option>
+        <option>Santa María Chimalapa</option>
+        <option>Santa María del Rosario</option>
+        <option>Santa María del Tule</option>
+        <option>Santa María Ecatepec</option>
+        <option>Santa María Guelacé</option>
+        <option>Santa María Guienagati</option>
+        <option>Santa María Huatulco</option>
+        <option>Santa María Huazolotitlán</option>
+        <option>Santa María Ipalapa</option>
+        <option>Santa María Ixcatlán</option>
+        <option>Santa María Jacatepec</option>
+        <option>Santa María Jalapa del Marqués</option>
+        <option>Santa María Jaltianguis</option>
+        <option>Santa María Lachixío</option>
+        <option>Santa María Mixtequilla</option>
+        <option>Santa María Nativitas</option>
+        <option>Santa María Nduayaco</option>
+        <option>Santa María Ozolotepec</option>
+        <option>Santa María Pápalo</option>
+        <option>Santa María Peñoles</option>
+        <option>Santa María Petapa</option>
+        <option>Santa María Quiegolani</option>
+        <option>Santa María Sola</option>
+        <option>Santa María Tataltepec</option>
+        <option>Santa María Tecomavaca</option>
+        <option>Santa María Temaxcalapa</option>
+        <option>Santa María Temaxcaltepec</option>
+        <option>Santa María Teopoxco</option>
+        <option>Santa María Tepantlali</option>
+        <option>Santa María Texcatitlán</option>
+        <option>Santa María Tlahuitoltepec</option>
+        <option>Santa María Tlalixtac</option>
+        <option>Santa María Tonameca</option>
+        <option>Santa María Totolapilla</option>
+        <option>Santa María Xadani</option>
+        <option>Santa María Yalina</option>
+        <option>Santa María Yavesía</option>
+        <option>Santa María Yolotepec</option>
+        <option>Santa María Yosoyúa</option>
+        <option>Santa María Yucuhiti</option>
+        <option>Santa María Zacatepec</option>
+        <option>Santa María Zaniza</option>
+        <option>Santa María Zoquitlán</option>
+        <option>Santiago Amoltepec</option>
+        <option>Santiago Apoala</option>
+        <option>Santiago Apóstol</option>
+        <option>Santiago Astata</option>
+        <option>Santiago Atitlán</option>
+        <option>Santiago Ayuquililla</option>
+        <option>Santiago Cacaloxtepec</option>
+        <option>Santiago Camotlán</option>
+        <option>Santiago Comaltepec</option>
+        <option>Villa de Santiago Chazumba</option>
+        <option>Santiago Choápam</option>
+        <option>Santiago del Río</option>
+        <option>Santiago Huajolotitlán</option>
+        <option>Santiago Huauclilla</option>
+        <option>Santiago Ihuitlán Plumas</option>
+        <option>Santiago Ixcuintepec</option>
+        <option>Santiago Ixtayutla</option>
+        <option>Santiago Jamiltepec</option>
+        <option>Santiago Jocotepec</option>
+        <option>Santiago Juxtlahuaca</option>
+        <option>Santiago Lachiguiri</option>
+        <option>Santiago Lalopa</option>
+        <option>Santiago Laollaga</option>
+        <option>Santiago Laxopa</option>
+        <option>Santiago Llano Grande</option>
+        <option>Santiago Matatlán</option>
+        <option>Santiago Miltepec</option>
+        <option>Santiago Minas</option>
+        <option>Santiago Nacaltepec</option>
+        <option>Santiago Nejapilla</option>
+        <option>Santiago Nundiche</option>
+        <option>Santiago Nuyoó</option>
+        <option>Santiago Pinotepa Nacional</option>
+        <option>Santiago Suchilquitongo</option>
+        <option>Santiago Tamazola</option>
+        <option>Santiago Tapextla</option>
+        <option>Villa Tejúpam de la Unión</option>
+        <option>Santiago Tenango</option>
+        <option>Santiago Tepetlapa</option>
+        <option>Santiago Tetepec</option>
+        <option>Santiago Texcalcingo</option>
+        <option>Santiago Textitlán</option>
+        <option>Santiago Tilantongo</option>
+        <option>Santiago Tillo</option>
+        <option>Santiago Tlazoyaltepec</option>
+        <option>Santiago Xanica</option>
+        <option>Santiago Xiacuí</option>
+        <option>Santiago Yaitepec</option>
+        <option>Santiago Yaveo</option>
+        <option>Santiago Yolomécatl</option>
+        <option>Santiago Yosondúa</option>
+        <option>Santiago Yucuyachi</option>
+        <option>Santiago Zacatepec</option>
+        <option>Santiago Zoochila</option>
+        <option>Nuevo Zoquiápam</option>
+        <option>Santo Domingo Ingenio</option>
+        <option>Santo Domingo Albarradas</option>
+        <option>Santo Domingo Armenta</option>
+        <option>Santo Domingo Chihuitán</option>
+        <option>Santo Domingo de Morelos</option>
+        <option>Santo Domingo Ixcatlán</option>
+        <option>Santo Domingo Nuxaá</option>
+        <option>Santo Domingo Ozolotepec</option>
+        <option>Santo Domingo Petapa</option>
+        <option>Santo Domingo Roayaga</option>
+        <option>Santo Domingo Tehuantepec</option>
+        <option>Santo Domingo Teojomulco</option>
+        <option>Santo Domingo Tepuxtepec</option>
+        <option>Santo Domingo Tlatayápam</option>
+        <option>Santo Domingo Tomaltepec</option>
+        <option>Santo Domingo Tonalá</option>
+        <option>Santo Domingo Tonaltepec</option>
+        <option>Santo Domingo Xagacía</option>
+        <option>Santo Domingo Yanhuitlán</option>
+        <option>Santo Domingo Yodohino</option>
+        <option>Santo Domingo Zanatepec</option>
+        <option>Santos Reyes Nopala</option>
+        <option>Santos Reyes Pápalo</option>
+        <option>Santos Reyes Tepejillo</option>
+        <option>Santos Reyes Yucuná</option>
+        <option>Santo Tomás Jalieza</option>
+        <option>Santo Tomás Mazaltepec</option>
+        <option>Santo Tomás Ocotepec</option>
+        <option>Santo Tomás Tamazulapan</option>
+        <option>San Vicente Coatlán</option>
+        <option>San Vicente Lachixío</option>
+        <option>San Vicente Nuñú</option>
+        <option>Silacayoápam</option>
+        <option>Sitio de Xitlapehua</option>
+        <option>Soledad Etla</option>
+        <option>Villa de Tamazulápam del Progreso</option>
+        <option>Tanetze de Zaragoza</option>
+        <option>Taniche</option>
+        <option>Tataltepec de Valdés</option>
+        <option>Teococuilco de Marcos Pérez</option>
+        <option>Teotitlán de Flores Magón</option>
+        <option>Teotitlán del Valle</option>
+        <option>Teotongo</option>
+        <option>Tepelmeme Villa de Morelos</option>
+        <option>Heroica Villa Tezoatlán de Segura y Luna, Cuna de la Independencia de Oaxaca</option>
+        <option>San Jerónimo Tlacochahuaya</option>
+        <option>Tlacolula de Matamoros</option>
+        <option>Tlacotepec Plumas</option>
+        <option>Tlalixtac de Cabrera</option>
+        <option>Totontepec Villa de Morelos</option>
+        <option>Trinidad Zaachila</option>
+        <option>La Trinidad Vista Hermosa</option>
+        <option>Unión Hidalgo</option>
+        <option>Valerio Trujano</option>
+        <option>San Juan Bautista Valle Nacional</option>
+        <option>Villa Díaz Ordaz</option>
+        <option>Yaxe</option>
+        <option>Magdalena Yodocono de Porfirio Díaz</option>
+        <option>Yogana</option>
+        <option>Yutanduchi de Guerrero</option>
+        <option>Villa de Zaachila</option>
+        <option>San Mateo Yucutindoo</option>
+        <option>Zapotitlán Lagunas</option>
+        <option>Zapotitlán Palmas</option>
+        <option>Santa Inés de Zaragoza</option>
+        <option>Zimatlán de Álvarez</option>
+    </select>            
+        </hgroup>
+    </body>
+</html>
