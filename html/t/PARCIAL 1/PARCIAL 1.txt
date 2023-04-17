@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+NOMBRE: FRANCISCO JAVIER HERNANDEZ MONDRAGON
+MATERIA: PROGRAMACION WEB 1
+-->
+<html lang ="es">
+    <head>
+        <title>NAVEGADORES</title>
+        <meta charset="utf-8">
+        <meta name="author" content="FRANCISCO JAVIER HERNANDEZ">
+        <meta name="revised" content="">
+        <meta name="description" content="">
+    </head>
+    <body >
+        <h1>TABLA NAVEGADORES WEB</h1>
+        <h2>TABLA COMPARATIVA</h2>
+            <table border="3"> 
+            <tr>
+<th></th>
+            <th>GOOGLE  CHROME</th>
+            
+            <th>MOZILLA FIRE FOX</th>
+
+            <th>MICROSOFT EDGE</th>
+
+            <th>OPERA GX</th>
+
+            <th>VIVALDI</th>
+
+            <th>BRAVE</th>
+
+            <th>SAFARI</th>
+
+            </tr>
+            
+            <tr>
+                <th>LOGO</th>
+                <th><img src="CHROME.jfif" alt="CHROME"></th>
+                <TH><img src="firefox.jfif" alt="FIREFOX"></TH>
+                <th><img src="edge.jfif" alt="EDGE"></th>
+                <th><img src="opera.png" alt="OPERA"></th>
+                <th><img src="vivaldi.png" alt="VIVALDI"></th>
+                <th><img src="brave.png" alt="BRAVE"></th>
+                <th><img src="safari.jfif" alt="SAFARI"></th>
+            </tr>
+
+            <tr>
+                <th>DESARROLLADOR</th>
+                <th>GOOGLE</th>
+                <th>FUNDACION MOZILLA</th>
+                <th>MICROSOFT</th>
+                <TH>OPERA SOFTWARE</TH>
+                <TH>VIVALDI TECHNOLOGIES</TH>
+                <TH>BRAVE SOFTWARE</TH>
+                <TH>APPLE INC</TH>
+            </tr>
+
+            <tr>
+                <th>LENGUAJE</th>
+                <th><li>C++</li><li>PHYTON</li><li>JS</li></th>
+                <TH><li>C/C++</li><li>RUST</li></TH>
+                <TH><LI>X</LI></TH>
+                <TH><LI>C++</LI></TH>
+                <th><li>HTML 5</li><LI>NODE.JS</LI><LI>REACTJS</LI></th>
+                <TH><LI>C/C++</LI><LI>JAVA SCRIPT</LI><LI>RUST</LI></TH>
+                <TH><LI>C++</LI><LI>OBJETIVE-C</LI><LI>SWIFT</LI></TH>
+            </tr>
+
+           <!-- <tr>
+                <th>WEB ENGINE</th>
+                <th></th>
+            </tr>-->
+
+            <tr>
+                <th>ULTIMA VERSION</th>
+                <th>110.0.5481.100</th>
+                <th>110.0</th>
+                <th>109.0.1518.78</th>
+                <th>95.0.4635.46</th>
+                <th>5.7.2921.60</th>
+                <th>1.47.171</th>
+                <th>14.0.2</th>
+            </tr>
+
+            <tr>
+                <th>SITIO WEB</th>
+                <th><a href="https://www.google.com/intl/es_es/chrome/" target="_blank"><img src="ICONO HOME.jpg" alt="HOME"></a></td>
+                <th><a href="https://www.mozilla.org/es-MX/firefox/"><img src="ICONO HOME.jpg" alt="HOME"></a></td>
+                <th><a href="https://www.microsoft.com/es-es/edge?form=MA13FJ" target="_blank"><img src="ICONO HOME.jpg" alt="HOME"></a></td>
+                <th><a href="https://www.opera.com/es/gx" target="_blank"><img src="ICONO HOME.jpg" alt="HOME"></a></td>
+                <th><a href="https://vivaldi.com/es/" target="_blank"><img src="ICONO HOME.jpg" alt="HOME"></a></td>               
+                <th><a href="https://brave.com/es/" target="_blank"><img src="ICONO HOME.jpg" alt="HOME"></a></td>
+                <th><a href="https://www.apple.com/mx/safari/" target="_blank"><img src="ICONO HOME.jpg" alt="HOME"></a></td>
+            </tr>
+            <tr>
+                <th>CAPTURA DE PANTALLA</th>
+                <TH><img src="image.png" alt="CAPTURA1"></TH>
+            </tr>
+            
+        </table>
+    </body>
