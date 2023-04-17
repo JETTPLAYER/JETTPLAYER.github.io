@@ -5,18 +5,106 @@ MATERIA: PROGRAMACION WEB 1
 FECHA: 14/FEBRERO/2023
 DESCRIPCION:
 -->
-<html lang ="es">
+<html lang="es">
     <head>
-        <title>PLANTILLA</title>
+        <title>Unidad 02 - Ejercicio - 07</title>
         <meta charset="utf-8">
-        <meta name="author" content="FRANCISCO JAVIER HERNANDEZ">
+        <meta name="author" content="Gustavo Michael Larios Guerra">
         <meta name="revised" content="">
         <meta name="description" content="">
         <style>
-            p{color:aquamarine;background-color: black;}
-            id{background-color: aqua;}
+            p{background-color: black; color: lightgreen}
+            .posX:hover{transform:translateX(25px);}
+            .posY:hover{transform:translateY(25px);}
+            .posXY:hover{transform:translate(25px,25px);}
+            .rotX:hover{transform:RotateX(45deg);}
+            .rotY:hover{transform:RotateY(45deg);}
+            .rotZ:hover{transform:RotateZ(45deg);}
+            .sizeX:hover{transform:scaleX(1.5);}
+            .sizeY:hover{transform:scaleY(1.5);}
+            .sizeXY:hover{transform:scale(0.75, 0.75);}
+            .skewX:hover{transform:skewX(30deg);}
+            .skewY:hover{transform:skewY(30deg);}
+            .mul:hover{transform:matrix(1, 0, 0, 2, 50, 0);}
+            /*.efecto {transition: width 2s, height 2s;}
+            .efecto:hover{transform:matrix(1, 0, 0, 2, 50, 0);}*/
+            .matrix_2:hover{ transform: matrix(2,1,1,2,200,1);}
+            .efecto{height: 75%;font-size: 75%; }
+            .efecto:hover{height: 125%; font-size: 125%;}
+
+            .rainbow{width: 100px; height: 100px; background-color: red; animation-name: rgb;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function:  ease-in;
+            }
+            @keyframes rgb{
+                /*for{ background-color: red;} to{ background-color: blue;}}*/
+                0%{background-color: red;} 
+                17%{background-color: yellow; }
+                33%{background-color: green;}
+                50%{background-color: Cyan; }
+                67%{background-color: blue; }
+                82%{background-color: magenta; }
+                97%{background-color:red; }
+            }
+
         </style>
     </head>
-    <body>
+    <body >
+        <hgroup>
+            <h1>Efectos con CSS</h1>
+            <H2>Translate</H2>
+            <p>UPSLP (Sin efecto)</p>
+            <p class="posX">UPSLP (Translate X)</p>
+            <p class="posY">UPSLP (Translate Y)</p>
+            <p class="posXY">UPSLP (Translate X, Y)</p>
+        </hgroup>
+        <hgroup>
+            <h2>Rotate</h2>
+            <p class="rotX">UPSLP (Rotate X)</p>
+            <p class="rotY">UPSLP (Rotate Y)</p>
+            <p class="rotZ">UPSLP (Rotate Z)</p>
+        </hgroup>
+        <hgroup>
+            <h2>Scale</h2>
+            <p class="sizeX">UPSLP (Scale X)</p>
+            <p class="sizeY">UPSLP (Scale Y)</p>
+            <p class="sizeXY">UPSLP (Scale X, Y)</p>
+        </hgroup>
+        <hgroup>
+            <h2>Skew</h2>
+            <p class="skewX">UPSLP (Skew X)</p>
+            <p class="skewY">UPSLP (Skew Y)</p>
+        </hgroup>
+        <hgroup>
+            <h2>Multiple</h2>
+            <p class="mul">UPSLP (Mover y Escalar)</p>
+            <p class="efecto">UPSLP (Mover y Escalar)</p>
+        </hgroup>
+
+        <hgroup>
+            <h2>Transition</h2>
+            <div class="matrix_2"><a href="#">matrix</a></div>
+            <div class="matrix_2"><a href="#"> matrix</a></div>
+            <div class="matrix_2"><a href="#"> matrix </a></div>
+        </hgroup>
+
+
+        <hgroup>
+            <h2>Transition</h2>
+            <div class="efecto"><a href="#"> menu 1</a></div>
+            <div class="efecto"><a href="#"> menu 2</a></div>
+            <div class="efecto"><a href="#"> menu 3</a></div>
+            <div class="efecto"><a href="#"> menu 4</a></div>
+            <div class="efecto"><a href="#"> menu 5</a></div>
+
+        </hgroup>
+
+        <hgroup>
+            <h1>raibow</h1>
+            <div class="rainbow"> <p>arcoiris</p></div>
+        </hgroup>
+
+
     </body>
 </html>
