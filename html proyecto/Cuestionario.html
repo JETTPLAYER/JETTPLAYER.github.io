@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cuestionario</title>
+
+    <link rel="stylesheet" type="text/css" href="barra.css">
+</head>
+<script>
+        var total;
+        function leer()
+            {var total=0;
+                for (var x=1;x<=10;x++) //Recorre las 10 preguntas
+                {
+                var res=0;
+                var nom="r"+x;
+                var resul=document.getElementsByName(nom);
+                for(var i=0;i<resul.length;i++) 
+                {
+                    if(resul[i].checked==true) 
+                        res=parseInt(resul[i].value);
+                }
+                total=total+res;
+                document.getElementById("total").innerHTML="Total: "+total;
+                }
+                if(total>15&&total<=29)
+                    document.getElementById("comentario").innerHTML="bien. mas de la mitad de tus respuestas son correctas";
+                else
+                    if(total==15)
+                    document.getElementById("comentario").innerHTML="Regular. Obtuviste la mitad de preguntas correctas";
+                    else
+                    if(total==30)
+                    document.getElementById("comentario").innerHTML="Excelente. Obtuviste todas las preguntas correctas";
+                    else
+                    if(total<=15&&total>=3)
+                    document.getElementById("comentario").innerHTML="mal. Obtuviste menos de la mitad de preguntas correctas";
+                    else
+                    if(total==3)
+                        document.getElementById("comentario").innerHTML="Una pregunta es correcta";
+                    else
+                    document.getElementById("comentario").innerHTML="Todas tus respuestas son incorrectas";
+            }
+            
+        function generar() {
+            var total=0;
+                for (var x=1;x<=10;x++) //Recorre las 10 preguntas
+                {
+                var res=0;
+                var nom="r"+x;
+                var resul=document.getElementsByName(nom);
+                for(var i=0;i<resul.length;i++) 
+                {
+                    if(resul[i].checked==true) 
+                        res=parseInt(resul[i].value);
+                }
+                total=total+res;}
+        //Crear un objeto o instancia jsPDF
+        var doc = new jsPDF();
+        
+        //Definir el tamaño de la letra
+        doc.setFontSize(40);
+        //Color del texto
+        doc.setTextColor(9, 7, 121);
+        
+        if (total == 30) {
+            doc.text(20, 50, "Excelente resultado, obtuviste " + total + " puntos.");
+        } else {
+            if (total == 24 & total == 27) {
+                doc.text(20, 50, "Muy bien, obtuviste " + total + " puntos.");
+            } else {
+                if (total == 18 & total == 21) {
+                    doc.text(20, 50, "Bien, obtuviste " + total + " puntos.");
+                } else {
+                    if (total == 9 & total == 12) {
+                        doc.text(20, 50, "Regular, obtuviste " + total + " puntos.");
+                    } else {
+                        if (total == 6 & total > 3) {
+                            doc.text(20, 50, "Mal, obtuviste " + total + " puntos.");
+                        } else {
+                            if (total == 3 & total > 0) {
+                                doc.text(20, 50, "Muy mal, obtuviste " + total + " puntos.");
+                            } else {
+                                if (total == 0) {
+                                    doc.text(20, 50, "No obtuviste ningun punto.");
+                                }
+                            }
+                            if(total==15){
+                                doc.text(20, 50, "Bien, obtuviste " + total + " puntos.");
+                            }
+                            else{
+                                if(total==12){
+                                doc.text(20, 50, "regular, obtuviste " + total + " puntos.");
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        var string = doc.output('datauristring');
+        
+        $('iframe').attr('src', string);
+        
+        }
+        </script>
+
+<body>
+
+	<div class="tabla">
+		<ul class="nav">
+			<li><a href="Portada.html">Portada</a></li>
+	        <li><a href="Información.html">Información </a></li>
+	        <li><a href="Actualidad.html">Actualidad </a></li>
+	        <li><a href="Tecnología.html">Tecnología </a></li>
+	        <li><a href="Estadísticas.html">Estadísticas</a></li>
+	        <li><a href="Futuro.html">Futuro </a></li>
+	        <li><a href="Educativo.html">Educativo </a></li>
+			<li><a href="Laboral.html">Laboral </a></li>
+            <li><a href="FAQ.html">Preguntas Frecuentes</a></li>
+            <li><a href="Cuestionario.html">Cuestionario</a></li>
+			<li><a href="Referencias.html">Referencias </a></li>
+			
+		</ul>
+	</div>
+
+    <h1>CUESTIONARIO</h1>
+
+    <div class="caja">
+        <ul>
+    
+            <li style="color: rgb(0, 0, 0);">Cual de las siguientes opciones describe mejor el termino "usabilidad" en el contexto de la interaccion humano - computadora?</li><br>
+            <input type="radio" name="r1" id="r1" value="3"/>Capacidad de un sistema para adaptarse a diferentes usuarios<br/>
+            <input type="radio" name="r1" id="r1" value="0"/>La seguridad de un sistea para proteger los datos del usuario<br/>
+            <input type="radio" name="r1" id="r1" value="0"/>La eficiencia y efectividad con la que los usuarios pueden completar tareas en un sistema<br/>
+            
+            <br/>
+            <li style="color: rgb(0, 0, 0);" >Cual de las siguientes afirmaciones es cierta sobre la retroalimentacion en la interaccion humano computadora?</li><br>
+            <input type="radio" name="r2" id="r2" value="3"/>La retroalimentacion solo se utiiza para corregir errores del sistema<br/>
+            <input type="radio" name="r2" id="r2" value="0"/>La retroalimentacion no es importante en la interaccion humano computadora<br/>
+            <input type="radio" name="r2" id="r2" value="0"/>La retroalimentacion es la unica forma utilizada en estos sistemas<br/>
+    
+            <br/>
+            <li style="color: rgb(0, 0, 0);">Cual de las siguientes opciones describe mejor el concepto de interaccion humano computadora</li><br>
+            <input type="radio" name="r3" id="r3" value="0"/>La capacidad de un sistema para ser utilizado por personas con discapacidades<br/>
+            <input type="radio" name="r3" id="r3" value="0"/>La capacidad de un sistema para funcionar sin conexion a Internet <br/>
+            <input type="radio" name="r3" id="r3" value="3"/>La capacidad de un sistema para adaptarse a las preferencias de los usuarios invidivuales<br/>
+            
+            <br/>
+            <li style="color: rgb(0, 0, 0);"></li>Cual de las siguientes opciones describe mejor el termino "interfaz de usuario" en la interaccion humano - computadora?<br>
+            <input type="radio" name="r4" id="r4" value="0"/>El area de la informatica que se ocupa del diseño y la contruccion de sistemas operativos<br/>
+            <input type="radio" name="r4" id="r4" value="3"/>El medio a traves del cual los usuarios interactuan con un sistema o una aplicacion<br/>
+            <input type="radio" name="r4" id="r4" value="0"/>La ciencia que investiga como los ordenadores pueden imitar la inteligencia humana<br/>
+            
+            <br/>
+            <li style="color: rgb(0, 0, 0);"></li>Cual de las siguientes opciones no es un ejemplo de una interfaz de usuario tangible?<br>
+            <input type="radio" name="r5" id="r5" value="0"/>Pantalla tactil<br/>
+            <input type="radio" name="r5" id="r5" value="3"/>Comando de voz<br/>
+            <input type="radio" name="r5" id="r5" value="0"/>Teclado y raton<br/>
+            
+    
+            <li style="color: rgb(0, 0, 0);">Cual de las siguientes opciones describe mejor el concepto de "diseño centrado en el usuario" en la interaccion humano computadora?</li><br>
+            <input type="radio" name="r6" id="r6" value="3"/>Un enfoque que prioriza las necesidades y caracteristicas del usuario final<br/>
+            <input type="radio" name="r6" id="r6" value="0"/>Un enfoque que se centra en la implementacion de caracteristicas avanzadas<br/>
+            <input type="radio" name="r6" id="r6" value="0"/>Un enfoque que se basa en la programacion y codificacion eficiente<br/>
+            
+            <br/>
+            <li style="color: rgb(0, 0, 0);">¿Cuáles son los factores de interacción humano computador?</li><br>
+            <input type="radio" name="r7" id="r7" value="0"/>Estadísticas y cálculos<br/>
+            <input type="radio" name="r7" id="r7" value="3"/>Visibilidad y Provisión.<br/>
+            <input type="radio" name="r7" id="r7" value="0"/>Referencias y Desarrolo<br/>
+            
+            <br/>
+            <li style="color: rgb(0, 0, 0);"></li>¿Cuáles son los objetivos de la IHC?<br>
+            <input type="radio" name="r8" id="r9" value="3"/>De los sistemas interactivos.<br/>
+            <input type="radio" name="r8" id="r9" value="0"/>Desarrollar o mejorar la seguridad, utilidad, efectividad, eficiencia y usabilidad<br/>
+            <input type="radio" name="r8" id="r9" value="0"/>Obtener información necesario para experimentos y trabajos<br/>
+
+            <br/>
+            <li style="color: rgb(0, 0, 0);"></li>¿Que permite la interacción entre el usuario y el computador?<br>
+            <input type="radio" name="r9" id="r10" value="0"/>Puede incluir software, la maquinación, el humanoide y beneficios de salud<br/>
+            <input type="radio" name="r9" id="r10" value="0"/>Puede incluir lápices, lapiceras, maquinaria, uso de programas<br/>
+            <input type="radio" name="r9" id="r10" value="3"/>Puede incluir pantallas de visualización, teclados, un mouse y la apariencia de un escritorio.<br/>
+            
+            <br/>
+            <li style="color: rgb(0, 0, 0);">¿Qué significa el IHC?</li><br>
+            <input type="radio" name="r10" id="r1" value="3"/>Interacción Humano-Computadora<br/>
+            <input type="radio" name="r10" id="r1" value="0"/>Interacción Humano-Compañía<br/>
+            <input type="radio" name="r10" id="r1" value="0"/>Interacción Hidrocortisona-Capsula<br/>
+            <br/>
+        </ul>
+    </div>
+    <input type="button" value="Obtener total" onclick="leer()">
+    <p style="color: white;">La puntuación obtenida en el examen es:   </p>
+    <p id="total">   </p>
+    <p id="comentario">   </p>
+    <p class="texto" onclick="generar()">Ver resultados</p>
+    
+    <input type="button" onclick="generar()" value="Ver resultados"/> <br/>
+    
+    <iframe frameborder="0" width="500" height="400"></iframe>
+
+	
+
+</body>
+</html>
