@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+	Nombre:Francisco Javier Hernandez Mondragon
+	Materia: Programación Web
+	Fecha: 24/04/2023
+	Descripción: 
+ -->
+<html>
+<head>
+	<title>Ejercicio 02</title>
+	<meta charset="utf-8">
+	<meta name="autor" content="Francisco Javier Hernandez Mondragon">
+	<meta name="Fecha" content="">
+    <meta name="revised" content="Jueves 20 abril">
+	<meta name="descripcion" content="">
+</head>
+<style>
+	.Ilit{ background-color: black; color: aqua;}
+</style>
+
+<body>
+	
+	<h1 class="Ilit">JavaScript var y alert</h1>
+
+    <script>
+        let x = 100;
+        let y= 50;
+        alert("main");
+        alert("Valor de x: " + x);
+        alert("valor de y: "+ y);
+
+        function testFunction(){
+            let x= 1;
+            let y= 5;
+            
+            alert("function"); // ventana de alerta
+            console.log(x);
+            console.log(y);
+        }
+
+        //alert(testFunction); imprime el texto de la función
+
+        testFunction();
+
+        //console.log(x); intentar imprimir los valores fuer ade la función genera un error
+        //console.log(y); var tampoco puede imprimirse, solo ignora bloques de código
+
+
+        // VAR Y LEY:  diferencias, sobreado, bloques de codigo, funciones y nombres de variables
+        
+    </script>
+
+    
+
+    <script>
+        // 2.1.1.19 Variables tarea */
+        const precioRosa = 8, costoLirio = 10, tulipanPrecio = 7;
+
+        let numeroRosas = 70, importeRosas;
+        let  cantidadLirio = 50, subtotalLirio;
+        let  tulipanCantidad = 20, tulipanTotal;
+        let total;
+
+
+
+        function calcula(){
+            importeRosas = precioRosa * numeroRosas;
+            subtotalLirio = costoLirio * cantidadLirio;
+            tulipanTotal = tulipanPrecio * tulipanCantidad;
+            total = importeRosas + subtotalLirio + tulipanTotal;
+        }
+
+        
+
+        function imprime(){
+           
+            alert("Rosas >> Precio: $" + precioRosa + ", Cantidad: " + numeroRosas + " , valor: $" +  importeRosas
+                +  "\n Lirios >> Precio: $" + costoLirio + ", Cantidad: " + cantidadLirio + " , valor: $" +  subtotalLirio
+                + " \n Tulipanes >> Precio: $" + tulipanPrecio + ", Cantidad: " + tulipanCantidad + " , valor: $" +  tulipanTotal
+                + "\n\n TOTAL : "+ total);
+        }
+
+        calcula();
+        imprime();
+
+        numeroRosas -= 20;
+        cantidadLirio -=30;
+
+        calcula();
+        imprime();
+
+        tulipanCantidad -= 60;
+
+        calcula();
+        imprime();
+
+    </script>
+
+    <script>
+        /* 2.1.1.20 LABORATORIO: Variables */
+        let nombre, telefono, correo;
+
+        function imprime(str1, str2, str3){
+            alert("Nombre >> " + str1 + "\n Telefono: " + str2 + "\n Correo: "+ str3);
+        }
+
+        nombre = "Maxwell Wright";
+        telefono = "(0191) 719 6495";
+        correo = "Curabitur.egestas.nunc@nonummyac.co.uk"
+
+        imprime(nombre, telefono, correo);
+
+
+        nombre="Raja Villarreal";
+        telefono="0866 398 2895";
+        correo="posuere.vulputate@sed.com";
+
+        imprime(nombre, telefono, correo);
+
+        nombre = "Helen Richards";
+        telefono="0800 1111";
+        correo="libero@convallis.edu";
+
+        imprime(nombre, telefono, correo);
+
+
+
+    </script>
+	
+</body>
+</html>

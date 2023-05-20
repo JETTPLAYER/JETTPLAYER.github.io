@@ -1,0 +1,1 @@
+console.log("Hola mundo desde la consola de JavaScript en el naegador web en otro archivo");
