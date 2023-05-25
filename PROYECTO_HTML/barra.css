@@ -1,0 +1,140 @@
+h1{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	align-content: center;
+	width: 25%;
+	padding: 25px;
+	margin: 35px;
+	background-color:rgb(228, 225, 225);
+	border-radius: 10px 25px 30px 25px;
+	border: 5px solid rgb(39, 42, 43);
+	-moz-border-radious: 10px;
+	-webkit-border-radius: 10px;
+	/*sombra*/
+	box-shadow: rgb(100, 98, 98) 25px -10px 25px;
+	-moz-box-shadow: rgb(128, 128, 128) 25px -10px 25px;
+	-webkit-box-shadow: rgb(128, 128, 128) 25px -10px 25px;
+}
+
+
+h2{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	
+	padding: 25px;
+	margin: 35px;
+
+	background-color:rgb(228, 225, 225);
+	border-radius: 10px 25px 30px 25px;
+	border: 5px solid rgb(39, 42, 43);
+	-moz-border-radious: 10px;
+	-webkit-border-radius: 10px;
+	/*sombra*/
+	box-shadow: rgb(100, 98, 98) 25px -10px 25px;
+	-moz-box-shadow: rgb(128, 128, 128) 25px -10px 25px;
+	-webkit-box-shadow: rgb(128, 128, 128) 25px -10px 25px;
+}
+
+h3{
+	text-align: center;
+}
+
+body {
+    background-color: rgb(230, 229, 229);
+}
+
+a{
+		 	text-decoration: none;
+		 	color: rgb(2, 0, 0);
+			
+}
+
+.nav{
+	font-family: 'parrafos'; src: url('Fuente/Alkalami,Silkscreen/Alkalami/Alkalami-Regular.ttf');;
+			font-size: 20px;
+		 	display: flex;
+		 	justify-content: space-evenly; 
+		 	list-style: none;
+		 	background-color: rgb(255, 255, 255);
+		 	padding: 25px 0px;
+}
+
+a:hover{
+			background-color: rgb(173, 161, 152);
+			color: rgb(0, 0, 0);
+			cursor: pointer;
+			align-content: center;
+}
+
+
+img{
+	height: 250px; -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.60)); 
+	margin: 35px;
+	background-color:rgb(194, 193, 193);
+	border-radius: 10px 25px 30px 25px;
+	border: 5px solid rgb(25, 25, 26);
+	-moz-border-radious: 10px;
+	-webkit-border-radius: 10px;
+	/*sombra*/
+	box-shadow: rgb(133, 131, 131) 25px -10px 25px;
+	-moz-box-shadow: rgb(128, 128, 128) 25px -10px 25px;
+	-webkit-box-shadow: rgb(128, 128, 128) 25px -10px 25px;
+
+}
+
+p{	
+	text-align: center;
+
+	font-size: 20px;
+}
+
+summary{
+	text-transform: uppercase;
+}
+
+.web{
+	all: initial;
+	text-align: center;
+	height: 250px;
+	width: 250px;;
+}
+
+.web2{
+	all: initial;
+	
+}
+
+td{
+	background-color: rgb(172, 170, 170);
+}
+
+
+.col4{
+	text-align: justify; column-gap: 35px; column-rule: double; column-count: 4;
+}
+.col2{
+	text-align: justify; column-gap: 10px; column-rule: double; column-count:2;
+}
+
+.icon {
+	align-items: center;
+    position: relative;
+  }
+
+  .icon .overlay {
+    position:sticky;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .icon:hover .overlay {
+    opacity: 1;
+	
+  }
+
+  .ptx{
+	text-align:center;
+  }
+
