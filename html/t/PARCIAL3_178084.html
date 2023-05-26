@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+	Nombre:FRANCISCO JAVIER HERNANDEZ MODNRAGON
+	Materia: Programación Web
+	Fecha: 19/05/2023
+	descripción:  EXAMEN PARCIAL 3
+ -->
+<html>
+<head>
+  <title>Calculadora</title>
+  
+	<title>Parcial 3</title>
+	<meta charset="utf-8">
+	<meta name="autor" content="FRANCISCO JAVIER HERNANDEZ MONDRAGON">
+	<meta name="Fecha" content="19 de mayo del 2023">
+	<meta name="descripcion" content="">
+
+  <style>
+    #calculator {
+      width: 300px;
+      border: 3px solid black;
+      padding: 10px;
+      background-color: lightgreen;
+      height: 300px;
+    }
+
+    #result {
+      height: 30px;
+      margin-bottom: 10px;
+      border: 1px solid black;
+      background-color: gray;
+      width: 50%;
+      text-align: right;
+      padding: 5px;
+    }
+
+    .btn {
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      background-color: green;
+      color: white;
+      padding: 10px;
+    }
+
+
+  </style>
+</head>
+<body border = 4>
+
+  <div id="calculator">
+
+    <div id="result"></div>
+    <button class="btn" onclick="clear()">C</button>
+    <br>
+
+    <button class="btn" onclick="add('1')">1</button>
+    <button class="btn" onclick="add('2')">2</button>
+    <button class="btn" onclick="add('3')">3</button>
+    <button class="btn" onclick="add('/')">/</button>
+    
+    <br>
+    <button class="btn" onclick="add('4')">4</button>
+    <button class="btn" onclick="add('5')">5</button>
+    <button class="btn" onclick="add('6')">6</button>
+    <button class="btn" onclick="add('*')">*</button>
+    
+    <br>
+    <button class="btn" onclick="add('7')">7</button>
+    <button class="btn" onclick="add('8')">8</button>
+    <button class="btn" onclick="add('9')">9</button>
+    <button class="btn" onclick="add('-')">-</button>
+    
+    <br>
+    <button class="btn" onclick="add('0')">0</button>
+    <button class="btn" onclick="add('.')">.</button>
+    <button class="btn" onclick="calcular()">=</button>
+    <button class="btn" onclick="add('+')">+</button>
+        
+  </div>
+
+  <script>
+    function add(value) {
+      var screen = document.getElementById('result');
+      screen.innerHTML += value;
+    }
+
+    function calcular() {
+      var screen = document.getElementById('result');
+      var result = eval(screen.innerHTML);
+      screen.innerHTML = result;
+    }
+
+    function clear() {
+      var screen = document.getElementById('result');
+      screen.innerHTML = '';
+    }
+  </script>
+</body>
+</html>
+    
